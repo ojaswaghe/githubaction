@@ -10,4 +10,9 @@ jobs:
         run: ls -lrt
       - name: print goodbye
         run: echo "Goodbye"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print ip
+        run: ip r
   
